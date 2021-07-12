@@ -1,0 +1,139 @@
+@font-face {
+    font-family: coco-font;
+    src: url("../fonts/coconnextarabic-light.ttf");
+}
+
+body{
+    background-color: #D5436A ;
+    font-family: coco-font;
+    height: 100vh;
+}
+img{
+    user-select: none !important;
+    -webkit-user-drag: none !important;
+}
+label{
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.background-img{
+    background-image: url(../images/backgraound.svg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    background-position: bottom center;
+    /* background-repeat: no-repeat; */
+    min-height: 12rem;
+}
+
+.md-form.md-outline label.active {
+    background: #fff;
+}
+.prefix {
+    color: #fff;
+}
+
+.form-login{
+    background-color: #fff;
+    width: 45%;
+    padding: 0.6rem 3rem;
+    border-radius: .8rem!important;
+}
+
+.form-login h1{
+    text-align: center;
+    color: #D5436A;
+    font-size: 25px;
+    margin-top: 1rem;
+    user-select: none !important;
+    -webkit-user-drag: none !important;
+}
+
+.md-form label{
+    right: 0 !important;
+    left: initial !important;
+}
+
+.md-form.md-outline label{
+    padding-left: inherit !important;
+    padding-right:10px;
+    padding-left:10px !important;
+    top: 5px ;
+}
+
+.md-form.md-outline input[type="text"]:not([readonly]),.md-form.md-outline input[type="password"]:not([readonly]){
+    border-radius: 7px;
+    height: 50px;
+}
+
+.md-form.md-outline input[type="text"]:focus:not([readonly]),.md-form.md-outline input[type="password"]:focus:not([readonly]){
+    border-color: #D5436A !important;
+    -webkit-box-shadow: inset 0 0 0 1px #D5436A !important;
+    box-shadow: inset 0 0 0 1px #D5436A !important;
+    border-radius: 7px;
+}
+
+.md-form.md-outline input[type="text"]:focus:not([readonly])+label,.md-form.md-outline input[type="password"]:focus:not([readonly])+label{
+    color: #D5436A !important;
+    top: 0px;
+}
+
+.md-form.md-outline input[type="text"]:not([readonly])+label,.md-form.md-outline input[type="password"]:not([readonly])+label{
+    top: 0px;
+}
+
+.btn-primary{
+    background-color:#D5436A !important;
+    font-size: 16px;
+}
+
+.btn-primary:not([disabled]):not(.disabled):active{
+    background-color:#db0e45 !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active{
+    border-color: #D5436A !important;
+}
+
+::selection{
+    background: #D5436A !important;
+}
+  
+::-moz-selection{
+    background: #D5436A !important;
+}
+
+
+  /* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    .form-login{
+        width: 95%;
+        padding: 0.6rem 1rem;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .form-login{
+        width: 75%;
+        padding: 0.6rem 2rem;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .form-login{
+        width: 60%;
+        padding: 0.6rem 2rem;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .form-login{
+        width: 45%;
+        padding: 0.6rem 3rem;
+    }
+}
+  
